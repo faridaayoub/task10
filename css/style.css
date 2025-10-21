@@ -1,0 +1,47 @@
+::selection{
+    background-color: #FEC25F;
+    color: black;
+}
+body{
+    background-color: #F7ECDE;
+}
+.bhead{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    color: #352E28;
+    position: relative;
+}
+.bhead::after{
+    content: '';
+    top: 50px;
+    left: 50px;
+    transform: translate(-19%,-50%);
+    width: 270px;
+    height: 25px;
+    background-color: #FEC25F;
+    position: absolute;
+    z-index: -1;
+}
+.dotline{
+    border-bottom: dotted 2px black;
+}
+.gradient-text{
+    font-size: 25px;
+    font-family: "Righteous", sans-serif;
+    background: linear-gradient(90deg, rgba(64,165,91,1), rgba(177,172,73,1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button{
+    background-color: #D1522D;
+}
+.visit{
+    color: white;
+    background-color: #8A9E24;
+}
+.visit:hover{
+    color: white;
+    background-color: #75861f;
+}

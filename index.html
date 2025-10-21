@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <div class="bhead">
+        <h1 class="bhead my-5">Bookmarker</h1>
+      </div>
+    </div>
+  </div>
+  <div class="dotline mt-4"></div>
+  <h2 class="text-center mt-5 gradient-text">
+    <i class="fa-solid fa-bookmark fa-lg"></i>
+       Bookmark your favorite sites
+    <i class="fa-solid fa-bookmark fa-lg"></i>
+  </h2>
+  <div class="form mt-4 px-3">
+  <div class="mb-3">
+    <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark" style="color: #000000;"></i> Site Name</label>
+    <input type="email" class="form-control" id="siteName" placeholder="Bookmark Name" oninput="validateSiteName()">
+  </div>
+  <div class="mb-3">
+    <label for="siteURL" class="form-label fw-bold"><i class="fa-solid fa-link" style="color: #000000;"></i> Site URL</label>
+    <input type="email" class="form-control" id="siteURL" placeholder="Website URL" oninput="validateSiteUrl()">
+  </div>
+  <div class="d-flex justify-content-center">
+  <button type="submit" class="btn btn-danger px-5 button" onclick="addSite()" >Submit</button>
+  </div>
+  </div>
+  <div class="dotline mt-4"></div>
+  <table class="bg-white w-100 mt-4 text-center table">
+    <thead class="border-0">
+      <tr class="p-3">
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table">
+    </tbody>
+  </table>
+
+
+</div>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
